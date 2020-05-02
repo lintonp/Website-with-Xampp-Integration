@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Sign Up</title>
+<style>
+.titles{
+	background-color: red;
+	text-align:center;
+	font-size: 110%;
+	height: 7%;
+}
+.menu{
+	background-color:black;
+	//height:10%;
+	text-color:white;
+}
+.content{
+	background-color: #dbdddd;
+	height:82%;
+	valign:center;  <!--***-->
+}
+.inputtype{
+	width:150%;
+	height:30px;
+	margin:0px 0px;
+}
+.menubtn{
+	background-color:black;
+    border: none;
+    color: white;
+    cellspacing:1px;
+	padding: 20px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+	margin:1px 1px;
+	width: 100%;
+	cursor:pointer;
+}
+.menubtn:hover {
+    background-color: #555859;
+}
+.menubtnsearch{
+	background-color:grey;
+    border: none;
+    color: white;
+    cellspacing:1px;
+	padding: 20px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+	margin:1px 1px;
+	width: 100%;
+	cursor:pointer;
+}
+.menubtnsearch:hover {
+    background-color: #8E9091;
+}
+a{
+	text-decoration:none;
+	color:white;	
+}
+<!--*******************************************************************************-->
+.stab{
+	border:1px solid black;
+	border-radius:15px;
+	height:70%;
+	width:40%;
+	font-size:20px;
+	cellpadding:50px;
+}
+.signupbutton{
+	background-color: none;
+    border: 1px solid black;
+	border-radius:5px;
+    color: black;    	
+    text-align: center;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+	
+	cursor:pointer;
+}
+.signupbutton:hover{
+	background-color: #00FF00;
+}
+.sgnupth{
+	text-align:left;
+}
+</style>
+</head>
+<body>
+<div class="titles">
+<h1>UTube</h1>
+</div><!--end titles-->
+<div class="menu">
+<table width="100%">
+<tr>
+<td colspan="2"><center><font color="red" size="6px">We-Entertain</font></center></td>
+<td><button class="menubtn" id="home"><a href="utube01.html">Home</a></button></td>
+<td><button class="menubtn" id="admins"><a href="user.php">Users</a></button></td>
+<td><button class="menubtn" id="trending"><a href="trending.php">Trending</a></button></td>
+<td><button class="menubtn" id="details"><a href="details.php">Video Details</a></button></td>
+<td><button class="menubtn" id="signup"><a href="signup.html">Sign Up</a></button></td> <!-- onclick="func()"-->
+<td><button class="menubtn" id="aboutus"><a href="aboutus.html">About Us</a></button></td>
+<td><button class="menubtn" id="login"><a href="feedback.html">Feedback</a></button></td>
+</tr>
+</table>
+</div><!--end menu-->
+<div class="content"> <!--Signup starts here-->
+<!--<form name="signup" method="POST">-->
+<form action="insertusers.php" method="POST">
+<table align="center" cellspacing="20px" class="stab">
+<tr border="1px">
+<th class="sgnupth">Email id</th>
+<td><input type="email" name="email_id" required></input></td>
+</tr>
+<tr>
+<th class="sgnupth">User Name</th>
+<td><input type="text" name="username" pattern="[a-zA-Z]{?}" required></input></td>
+</tr>
+<tr>
+<th class="sgnupth">Gender</th>
+<td><input type="text" name="gender" required></input></td>
+</tr>
+<tr>
+<th class="sgnupth">Password</th>
+<td><input type="password" name="password" minlength="7" maxlength="12" placeholder="Enter password" pattern="[a-zA-Z0-9]{?}" required></input></td>
+</tr><tr>
+<th class="sgnupth">Location</th>
+<td><input type="text" name="location" required></input></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<button type="submit" name="signup" class="signupbutton">Sign up</button>
+</td>
+</tr>
+</table>
+</form>
+</div><!--end content for signup-->
+</body>
+</html>
